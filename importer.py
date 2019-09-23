@@ -2,7 +2,7 @@ import requests
 import json
 import sys
 
-# Mattermost server
+# Mattermost source server
 source_conn_dict = {
     "url" : "http://localhost:8065",
     "username" : "traum",
@@ -79,6 +79,8 @@ class MattermostServer:
             json={ "team_id": team_id, \
                 "name": channel_info["name"], \
                 "display_name": channel_info["display_name"], \
+                "purpose": channel_info["purpose"], \
+                "header": channel_info["header"], \
                 "type": channel_info["type"] })
         info = response.json()
         print(info)
