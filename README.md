@@ -7,4 +7,4 @@ How to use:
 2. Run importer.py from a command line with one of the following options
   - 'show' to list all the Teams and Channels of the source server
   - 'apply' to go through the Teams and Channels of the source server and create them if not already there on the target server
-
+  - e.g. 'python importer.py show'
